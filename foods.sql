@@ -23,7 +23,6 @@ CREATE TABLE food_index_grid(
 INSERT INTO food_index_grid VALUES(NULL,'http://127.0.0.1:3000/img/index/icon_1.png','购物车','shopCar');
 INSERT INTO food_index_grid VALUES(NULL,'http://127.0.0.1:3000/img/index/icon_2.png','菜品列表','shopList');
 INSERT INTO food_index_grid VALUES(NULL,'http://127.0.0.1:3000/img/index/icon_3.png','留言板','message');
-INSERT INTO food_index_grid VALUES(NULL,'http://127.0.0.1:3000/img/index/icon_4.png','附近','address');
 
 /*创建首页精选表*/
 CREATE TABLE food_index_nice(
