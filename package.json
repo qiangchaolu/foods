@@ -1,0 +1,26 @@
+{
+    "name": "foods",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/qiangchaolu/foods.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/qiangchaolu/foods/issues"
+    },
+    "homepage": "https://github.com/qiangchaolu/foods#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-session": "^1.16.2",
+        "mysql": "^2.17.1"
+    }
+}
