@@ -97,14 +97,14 @@ CREATE TABLE food_shopCar(
   pid INT,
   uid INT
 );
-INSERT INTO food_shopCar VALUES(NULL,'img/shoplist/sl1.jpg','酱蒸五花肉','34.00',1,1,1);
-INSERT INTO food_shopCar VALUES(NULL,'img/shoplist/sl2.jpg','奶香土豆泥','18.00',1,2,2);
-INSERT INTO food_shopCar VALUES(NULL,'img/shoplist/sl2.jpg','奶香土豆泥','18.00',1,2,3);
-INSERT INTO food_shopCar VALUES(NULL,'img/shoplist/sl2.jpg','奶香土豆泥','18.00',1,2,1);
-INSERT INTO food_shopCar VALUES(NULL,'img/shoplist/sl3.jpg','清蒸虾丸','30.00',1,3,4);
-INSERT INTO food_shopCar VALUES(NULL,'img/shoplist/sl3.jpg','清蒸虾丸','30.00',1,3,1);
-INSERT INTO food_shopCar VALUES(NULL,'img/shoplist/sl4.jpg','花开富贵卷','28.00',1,4,2);
-INSERT INTO food_shopCar VALUES(NULL,'img/shoplist/sl4.jpg','花开富贵卷','28.00',1,4,1);
+INSERT INTO food_shopCar VALUES(NULL,'img/details/d1.jpg','酱蒸五花肉','34.00',1,1,1);
+INSERT INTO food_shopCar VALUES(NULL,'img/details/d2.jpg','奶香土豆泥','18.00',1,2,2);
+INSERT INTO food_shopCar VALUES(NULL,'img/details/d2.jpg','奶香土豆泥','18.00',1,2,3);
+INSERT INTO food_shopCar VALUES(NULL,'img/details/d2.jpg','奶香土豆泥','18.00',1,2,1);
+INSERT INTO food_shopCar VALUES(NULL,'img/details/d3.jpg','清蒸虾丸','30.00',1,3,4);
+INSERT INTO food_shopCar VALUES(NULL,'img/details/d3.jpg','清蒸虾丸','30.00',1,3,1);
+INSERT INTO food_shopCar VALUES(NULL,'img/details/d4.jpg','花开富贵卷','28.00',1,4,2);
+INSERT INTO food_shopCar VALUES(NULL,'img/details/d4.jpg','花开富贵卷','28.00',1,4,1);
 
 /*创建留言板输入表*/
 CREATE TABLE food_message(

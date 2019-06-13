@@ -9,10 +9,10 @@ const session = require("express-session");
 
 //3:创建连接池
 const pool = mysql.createPool({
-    host: "w.rdc.sae.sina.com.cn",
-    user: "5kxl42on4m",
-    password: "4lz5jyl3m0jixk2mkkz1y5i15k1k0k04xxyyj4ky",
-    database: "app_worldfoods"
+    host: "127.0.0.1",
+    user: "root",
+    password: "",
+    database: "foods"
 });
 //4:创建express对象
 var server = express();
@@ -33,8 +33,8 @@ server.use(cors({
     credentials: true
 }))
 
-//5:绑定监听端口 5050
-server.listen(5050);
+//5:绑定监听端口 3000
+server.listen(3000);
 //5.1:指定静态目录.保存图片资源
 //    项目中所有图片都需要保存在服务器端
 //    重启动服务器 
@@ -123,6 +123,7 @@ server.get("/login", (req, res) => {
         pool.query(sql, [phone, pwd], (err, result) => {
             if (err) throw err;
             if (result.length == 0) {
+                xw
                 res.send({ code: -1, msg: "手机号或者密码错误" });
             } else {
                 var id = result[0].id;
@@ -196,7 +197,7 @@ server.get("/addCar", (req, res) => {
         pool.query(sql, [uid, pid], (err, result) => {
             if (err) throw err;
             if (result.length == 0) {
-                var sql = `INSERT INTO food_shopCar VALUES(NULL,"${img_url}","${tit}",${price},${count},${pid},${uid}`;
+                var sql = `INSERT INTO food_shopCar VALUES(NULL,"${img_url}","${tit}","${price}",${count},${pid},${uid}`;
             } else {
                 var sql = ` UPDATE food_shopCar`;
                 sql += ` SET count=count+${count}`;
