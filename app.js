@@ -197,7 +197,7 @@ server.get("/addCar", (req, res) => {
         pool.query(sql, [uid, pid], (err, result) => {
             if (err) throw err;
             if (result.length == 0) {
-                var sql = `INSERT INTO food_shopCar VALUES(NULL,"${img_url}","${tit}",${price},${count},${pid},${uid}`;
+                var sql = `INSERT INTO food_shopCar VALUES(NULL,"${img_url}","${tit}",${price},${count},${pid},${uid})`;
             } else {
                 var sql = ` UPDATE food_shopCar`;
                 sql += ` SET count=count+${count}`;
