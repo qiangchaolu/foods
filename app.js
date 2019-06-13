@@ -33,8 +33,8 @@ server.use(cors({
     credentials: true
 }))
 
-//5:绑定监听端口 3000
-server.listen(3000);
+//5:绑定监听端口 5050
+server.listen(5050);
 //5.1:指定静态目录.保存图片资源
 //    项目中所有图片都需要保存在服务器端
 //    重启动服务器 
