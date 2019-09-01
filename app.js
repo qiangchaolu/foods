@@ -10,9 +10,9 @@ const session = require("express-session");
 //3:创建连接池
 const pool = mysql.createPool({
     host: "w.rdc.sae.sina.com.cn",
-    user: "om15zl34lm",
-    password: "423ihz5wwxzmmhm3h51wjki3j4xih52kyyw45lxx",
-    database: "app_wfoods"
+    user: "4304zok0wk",
+    password: "i1hwkhx21xlk1li0yl4xz5ij0i55k4iyi04ml4w3",
+    database: "app_wordfoods"
 });
 //4:创建express对象
 var server = express();
